@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="as/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Bias Bazaar</title>
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      background-color: white;
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: fit-content;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="http://127.0.0.1:5501/index.html">
+  <div class="header-logo"></div></a>
+  <div class="menu">
+    <i class="ri-menu-fill menu"></i>
+
+  </div>
+  <header style="background-color: none;">
+
+
+    <div style="background-color: none;" class="header1 mt-2">
+      <nav>
+        <a href="#">KPOP Cothes</a>
+        <a href="#">KPOP Merch</a>
+        <a href="#">Albums</a>
+        <a href="#">BTS Special</a>
+        <a href="#">Gifts</a>
+      </nav>
+
+      <div class="icon">
+        <a href="#"><i class="ri-search-line icons"></i></a>
+        <a href="#"><i class="ri-shopping-cart-2-fill icons"></i></a>
+        <a href="#"><i class="ri-account-circle-fill icons"></i></a>
+      </div>
+
+    </div>
+
+
+  </header>
+
+  <div style="background-color: white;" id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="as/img/banner1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="as/img/banner2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="as/img/banner3.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div style="background-color: white ; cursor: pointer; padding: 15px; "
+    class="clothing mt-5 p-1 text-center fw-bold new">
+    <h2>Bestsellers</h2>
+    <p class="fw-bold text-center">Fill your wardrobe with K-style</p>
+  </div>
+
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+
+        <div class="card" style="width: 20rem;">
+          <img src="as/img/o1.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-start">
+            <p class="card-title ">College Baseball Varsity Jacket</p>
+          </div>
+          <div class="Amt">
+            <p class="rating"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+            <p class="price">₹2000</p>
+          </div>
+          <a href="#">
+            <button>Add To Cart</button></a>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+
+        <div class="card" style="width: 20rem;">
+          <img src="as/img/o8.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-start">
+            <p class="card-title ">College Baseball Varsity Jacket</p>
+          </div>
+          <div class="Amt">
+            <p class="rating"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+            <p class="price">₹2000</p>
+          </div>
+          <a href="#">
+            <button>Add To Cart</button></a>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+
+        <div class="card" style="width: 20rem;">
+          <img src="as/img/o7.avif" class="card-img-top" alt="...">
+          <div class="card-body text-start">
+            <p class="card-title ">College Baseball Varsity Jacket</p>
+          </div>
+          <div class="Amt">
+            <p class="rating"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+            <p class="price">₹2000</p>
+          </div>
+          <a href="#">
+            <button>Add To Cart</button></a>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+
+        <div class="card" style="width: 20rem;">
+          <img src="as/img/o6.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-start">
+            <p class="card-title ">College Baseball Varsity Jacket</p>
+          </div>
+          <div class="Amt">
+            <p class="rating"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+            <p class="price">₹2000</p>
+          </div>
+          <a href="#">
+            <button>Add To Cart</button></a>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+
+        <div class="card" style="width: 20rem;">
+          <img src="as/img/o5.avif" class="card-img-top" alt="...">
+          <div class="card-body text-start">
+            <p class="card-title ">College Baseball Varsity Jacket</p>
+          </div>
+          <div class="Amt">
+            <p class="rating"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+            <p class="price">₹2000</p>
+          </div>
+          <a href="#">
+            <button>Add To Cart</button></a>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+
+        <div class="card" style="width: 20rem;">
+          <img src="as/img/O4.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-start">
+            <p class="card-title ">College Baseball Varsity Jacket</p>
+          </div>
+          <div class="Amt">
+            <p class="rating"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+            <p class="price">₹2000</p>
+          </div>
+          <a href="#bestseller">
+            <button>Add To Cart</button></a>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+
+        <div class="card" style="width: 20rem;">
+          <img src="as/img/o3.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-start">
+            <p class="card-title ">College Baseball Varsity Jacket</p>
+          </div>
+          <div class="Amt">
+            <p class="rating"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+            <p class="price">₹2000</p>
+          </div>
+          <a href="#">
+            <button>Add To Cart</button></a>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+
+        <div class="card" style="width: 20rem;">
+          <img src="as/img/O2.webp" class="card-img-top" alt="...">
+          <div class="card-body text-start">
+            <p class="card-title ">College Baseball Varsity Jacket</p>
+          </div>
+          <div class="Amt">
+            <p class="rating"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+            <p class="price">₹2000</p>
+          </div>
+          <a href="#">
+            <button>Add To Cart</button></a>
+        </div>
+
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <a href="http://127.0.0.1:5501/Bestseller/Best.html">
+    <div class="btn w-100 "><button>View More</button></div>
+  </a>
+
+
+
+  <div class="container-fluid  new mt-5">
+    <div class="container two mx-auto">
+      <div class="row">
+
+        <div class="col-md-6">
+          <img class="w-100 p-5 mobile" src="as/img/T-1.png" alt="">
+        </div>
+        <div class="col-md-6">
+          <img class="w-100 p-5 mobile" src="as/img/T-2.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="background-color: white ; padding: 15px; cursor: pointer;"
+    class="clothing mt-5 p-1 text-center fw-bold new">
+    <h2>Kpop Merches</h2>
+    <p class="fw-bold text-center">Merch that matches your energy</p>
+  </div>
+
+
+  <div class="container d-flex w-100 merch">
+    <div class="row kpoprow">
+      <div class="col-6 col-md-3 ">
+        <div class="card kpopbox mb-3 mt-3" style="max-width: 540px;">
+          <div class="row">
+            <div class="col-7">
+              <img src="as/img/417a9c614d5cb6605bf6f83bdf898672.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-5 mx-auto p-0 m-0 d-flex justify-content-center align-items-center ">
+              <div class="card-body  text-center ">
+                <h5 class="card-title text-center palak d-block w-100">Clothing</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 ">
+        <div class="card kpopbox mb-3 mt-3" style="max-width: 540px;">
+          <div class="row">
+            <div class="col-7">
+              <img src="as/img/4b7cc8a3b695eab002bbed12be0e2e93.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-5 mx-auto p-0 m-0 d-flex justify-content-center align-items-center ">
+              <div class="card-body  text-center ">
+                <h5 class="card-title text-center palak d-block w-100">Albums</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 ">
+        <div class="card kpopbox mb-3 mt-3" style="max-width: 540px;">
+          <div class="row">
+            <div class="col-7">
+              <img src="as/img/c739229e6c9aba3be679624526206bee.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-5 mx-auto p-0 m-0 d-flex justify-content-center align-items-center ">
+              <div class="card-body  text-center ">
+                <h5 class="card-title text-center palak d-block w-100">Plushies</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 ">
+        <div class="card kpopbox mb-3 mt-3" style="max-width: 540px;">
+          <div class="row">
+            <div class="col-7">
+              <img src="as/img/content_mceu_16751548431607564692301.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-5 mx-auto p-0 m-0 d-flex justify-content-center align-items-center ">
+              <div class="card-body  text-center ">
+                <h5 class="card-title text-center palak d-block w-100">Light Sticks</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div class=" box1">
+
+    <div class="container-fluid mt-3 d-flex biasa ">
+      <div class=" col-md-6">
+        <div class=" biasimg img">
+
+        </div>
+      </div>
+      <div class="col-md-6 bias-text">
+
+        <div style="background-color: transparent ;  " class="mt-5 p-1 text-center fw-bold new">
+          <h2>Who's Your Bias Today?</h2>
+          <p>K-pop idols are multi-talented performers trained in singing, dancing, and rapping, often debuting in
+            highly coordinated groups under major entertainment agencies. These groups, like BTS, BLACKPINK, TWICE, and
+            Stray Kids, are known for their dynamic performances, unique concepts, and stunning visuals. Each member
+            usually has a specific role—such as leader, vocalist, rapper, or dancer—and they often connect deeply with
+            fans through social media and fan events. K-pop groups release music in multiple languages, aiming for
+            global reach, and build passionate fanbases who actively support them through streaming, voting, and
+            attending concerts. Fans also love to shop their favorite idols' outfits and accessories through platforms
+            like <b>Bias Bazaar</b>, which offers curated K-pop-inspired fashion and merchandise to help fans channel
+            their
+            bias’s signature style.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color: white ; padding: 15px; cursor: pointer;"
+    class="clothing mt-5 p-1 text-center fw-bold new mb-3">
+    <h2>Share Your K-pop Journey 💖</h2>
+    <p>How did it all start? Who stole your heart? Let us know!</p>
+  </div>
+  <div class="kpopmsg">
+
+    <H5>Tell Us About Your Journey:</H5>
+    <textarea name="story" rows="8" class="form-control mb-3" placeholder="Share your story here..."
+      required></textarea>
+
+    <button type="submit" onclick="sub()" class="my-btn fw-bold">Submit 💌</button>
+  </div>
+
+  <div class="box1 twoo">
+    <div class="container-fluid mt-5 d-flex p-2 ">
+      <div class="col-md-6 bias-text ">
+        <div style="background-color: transparent ; padding: 15px; " class="mt-5 p-4 text-center fw-bold new">
+          <h2>Your K-Drama Obsession!</h2>
+          Live your K-Drama fantasy with <b>Bias Bazaar</b> – your ultimate fashion destination for all things
+          Korean-inspired! Whether you're a die-hard fan of romantic leads, stylish second male characters, or powerful
+          female icons, we’ve got you covered with fashion that feels straight out of your favorite scenes. At <b>Bias
+            Bazaar</b>, you’ll find a curated collection of trendy Korean-style clothes, chic accessories, elegant
+          handbags,
+          and jewelry that perfectly capture the essence of your K-Drama obsession.
+          <br>
+          Our pieces are not just stylish, they tell a story – your story, inspired by your bias. Whether you're
+          dressing up for a casual outing, date night, or just want to add a little drama to your everyday wardrobe, our
+          collection helps you recreate iconic looks effortlessly. Every item is handpicked to reflect the charm, grace,
+          and trendsetting vibes of K-Dramas you love most.
+          <br>
+
+          Start shopping today at <b>biasbazaar.in</b> and let your wardrobe speak fluent Korean
+          drama. Because at Bias Bazaar, fashion isn’t just about clothes – it’s about expressing your love for the
+          story that inspires you.
+
+        </div>
+
+        <div class="btn w-100 "><button>View More</button></div>
+
+      </div>
+      <div class="col-md-6 ">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="as/img/b1.png" class="d-block w-100 img1" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="as/img/b2.png" class="d-block w-100 img1" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="as/img/b3.png" class="d-block w-100 img1" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="as/img/b4.png" class="d-block w-100 img1" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="as/img/b5.png" class="d-block w-100 img1" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div style="background-color: white ; padding: 15px; cursor: pointer; "
+    class="clothing mt-5 p-1 text-center fw-bold new mb-3">
+    <h2>Why Choose Us?</h2>
+  </div>
+
+  <div class="container d-flex w-100 pt-3 pb-3 ">
+    <div class="col-6 ">
+      <div class="col-md-3  column w-100 text-center">
+        <i class="ri-team-fill icon1"></i>
+        <div>
+          <p class="line"> <b>24x7 Customer support </b> <br>We offer 24x7 customer support to ensure your queries are
+            resolved
+            anytime, anywhere.</p>
+        </div>
+      </div>
+      <div class="col-md-3 column w-100">
+        <i class="ri-truck-fill icon1"></i>
+        <div>
+
+          <p class="line"> <b>Fast Delivery </b><br> We ensure your products reach you quickly and safely, right at your
+            doorstep.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+
+      <div class="col-md-3 column w-100">
+        <i class="ri-user-heart-fill icon1"></i>
+        <p class="line"><b>Trendy Kpop Fashion </b> <br> Stay ahead in style with our trendy K-pop fashion collection.
+        </p>
+      </div>
+      <div class="col-md-3 column w-100">
+        <i class="ri-wallet-fill icon1"></i>
+        <p class="line"> <b>Quality Meets Affordability </b><br>Our products are crafted to offer premium style without
+          breaking the bank.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="box p-4 d-flex">
+    <div class="innerbox review ">
+      <div class="col-md-3">
+        <img src="https://i.pinimg.com/736x/8d/0f/9a/8d0f9ad893bafd6a80b34dcf2354c463.jpg" class="reviewimg" alt=""
+          srcset="">
+      </div>
+      <div class="col-md-9">
+        <h6 class="fw-bold">Meow</h6>
+        <p class="rating1"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+            class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dolorum! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Laboriosam, fuga.</p>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="swiper mySwiper1 select mt-0">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+
+        <div class="box p-4">
+          <div class="innerbox review ">
+            <div class="col-md-4">
+              <img src="https://i.pinimg.com/736x/8d/0f/9a/8d0f9ad893bafd6a80b34dcf2354c463.jpg" class="reviewimg"
+                alt="" srcset="">
+            </div>
+            <div class="col-md-8">
+              <h6 class="fw-bold">Meow</h6>
+              <p class="rating1"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                  class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dolorum! Lorem ipsum dolor sit
+                amet
+                consectetur adipisicing elit. Laboriosam, fuga.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+
+        <div class="box p-4">
+          <div class="innerbox review ">
+            <div class="col-md-4">
+              <img src="https://i.pinimg.com/736x/8d/0f/9a/8d0f9ad893bafd6a80b34dcf2354c463.jpg" class="reviewimg"
+                alt="" srcset="">
+            </div>
+            <div class="col-md-8">
+              <h6 class="fw-bold">Meow</h6>
+              <p class="rating1"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                  class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dolorum! Lorem ipsum dolor sit
+                amet
+                consectetur adipisicing elit. Laboriosam, fuga.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+
+        <div class="box p-4">
+          <div class="innerbox review ">
+            <div class="col-md-4">
+              <img src="https://i.pinimg.com/736x/8d/0f/9a/8d0f9ad893bafd6a80b34dcf2354c463.jpg" class="reviewimg"
+                alt="" srcset="">
+            </div>
+            <div class="col-md-8">
+              <h6 class="fw-bold">Meow</h6>
+              <p class="rating1"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                  class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dolorum! Lorem ipsum dolor sit
+                amet
+                consectetur adipisicing elit. Laboriosam, fuga.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+
+        <div class="box p-4">
+          <div class="innerbox review ">
+            <div class="col-md-4">
+              <img src="https://i.pinimg.com/736x/8d/0f/9a/8d0f9ad893bafd6a80b34dcf2354c463.jpg" class="reviewimg"
+                alt="" srcset="">
+            </div>
+            <div class="col-md-8">
+              <h6 class="fw-bold">Meow</h6>
+              <p class="rating1"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                  class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dolorum! Lorem ipsum dolor sit
+                amet
+                consectetur adipisicing elit. Laboriosam, fuga.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+
+        <div class="box p-4">
+          <div class="innerbox review ">
+            <div class="col-md-4 uplast">
+              <img src="https://i.pinimg.com/736x/8d/0f/9a/8d0f9ad893bafd6a80b34dcf2354c463.jpg" class="reviewimg"
+                alt="" srcset="">
+            </div>
+            <div class="col-md-8">
+              <h6 class="fw-bold">Meow</h6>
+              <p class="rating1"><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i
+                  class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dolorum! Lorem ipsum dolor sit
+                amet
+                consectetur adipisicing elit. Laboriosam, fuga.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <footer>
+    <div class="last bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mt-5">
+            <img src="as/img/logo.png" class="w-100" alt="">
+            <p class="text-white text-start address"><i class="ri-map-pin-fill"></i> B-409 sudershan park near shamshaan
+              bhumi
+              <br>New Delhi-110026
+            </p>
+          </div>
+          <div class="col-md-4 mt-5 d-flex flex-column">
+            <h2>Quick Links</h2>
+            <a href="#">Clothing</a>
+            <a href="#">Kpop Merch</a>
+            <a href="#">BTS Special</a>
+            <a href="#">Accessories</a>
+            <a href="#">Albums</a>
+          </div>
+          <div class="col-md-4 mt-5 d-flex flex-column">
+            <h2>Contact Us</h2>
+            <a href="#"><i class="ri-phone-fill"></i> 8595134597</a>
+            <a href="#"><i class="ri-mail-fill"></i> biasbazaar@gmail.com</a>
+            <a href="#"><i class="ri-instagram-fill"></i> @bias_bazaar</a>
+            <a href="#"><i class="ri-twitter-fill"></i> @biasbazaar</a>
+            <a href="#"><i class="ri-facebook-box-fill"></i> @bias_bazaar</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <div class="copy bg-dark  p-2 text-white">
+    <P class="mt-2"> Designe & Developed by Palak Tyagi</P>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4, // default for desktop
+      spaceBetween: 20,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        // when window width is <= 768px (mobile/tablets)
+        0: {
+          slidesPerView: 2
+        },
+        769: {
+          slidesPerView: 4
+        }
+      }
+    });
+
+    // var swiper1 = new Swiper(".mySwiper1", {
+    //   slidesPerView: 3,
+    //   spaceBetween: 20,
+    //   freeMode: true,
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    //   breakpoints: {
+    //     0: {
+    //       slidesPerView: 2
+    //     },
+    //     769: {
+    //       slidesPerView: 3
+    //     }
+    //   }
+    // });
+
+
+    var swiper = new Swiper(".mySwiper1", {
+      slidesPerView: 1,  // default (mobile)
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        // When window width is >= 768px (tablet/desktop)
+        768: {
+          slidesPerView: 2,
+        }
+      }
+    });
+
+    function sub() {
+      alert("Thank you for sharing your journey! 💜");
+    }
+
+  </script>
+
+</body>
+
+</html>
